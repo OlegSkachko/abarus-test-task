@@ -63,18 +63,21 @@ input {
 
 .table-head_title1 {
     position: relative;
+    cursor:pointer;
     margin-left: 23px;
     margin-right: 39px;
 }
 
 .table-head_title2 {
     position: relative;
+    cursor:pointer;
     margin-left: 151px;
     margin-right: 34px;
 }
 
 .table-head_title3 {
     position: relative;
+    cursor:pointer;
     margin-left: 410px;
     margin-right: 25px;
 }
@@ -90,13 +93,14 @@ input {
 }
 
 .table-filter {
-    cursor: pointer;
+    cursor:default;
     width: 11.66px;
     height: 5.83px;
     background-image: url(./../../img/filter.png);
 }
 
 .rotate {
+    cursor:default;
     transform: rotate(180deg);
 }
 

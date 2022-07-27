@@ -32,24 +32,36 @@ const TableHead: FC<ITableHead> = ({posts,setPosts}: ITableHead) => {
   return (
     <div className='table-head'>
         <div className='table-head_title'>
-          <span className='table-head_title1'>ID</span>
+          <span 
+            className='table-head_title1'   
+            onClick={()=>filterPosts('id')}
+          >
+            ID
+          </span>
           <div 
             className={rotateIconId ? 'table-filter rotate' : 'table-filter'} 
-            onClick={()=>filterPosts('id')}
           />
         </div>
         <div className='table-head_title'>
-          <span className='table-head_title2'>Заголовок</span>
-          <div 
-            className={rotateIconTitle ? 'table-filter rotate' : 'table-filter'} 
+          <span 
+            className='table-head_title2'
             onClick={()=>filterPosts('title')}
+          >
+            Заголовок
+          </span>
+          <div 
+            className={rotateIconTitle ? 'table-filter rotate' : 'table-filter'}
           />
         </div>
         <div className='table-head_title'>
-          <span className='table-head_title3'>Описание</span>
+          <span 
+            className='table-head_title3'
+            onClick={()=>filterPosts('body')}
+          >
+            Описание
+          </span>
           <div 
             className={rotateIconBody ? 'table-filter rotate' : 'table-filter'} 
-            onClick={()=>filterPosts('body')}
           />
         </div>
       </div>
